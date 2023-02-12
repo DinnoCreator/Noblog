@@ -1,3 +1,3 @@
-const api = "http://localhost:4190";
+const api = "https://api-noblog.onrender.com";
 
 export {api}
