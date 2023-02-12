@@ -110,7 +110,7 @@ export const Input = (props: InputValue) => {
                     }
                   })
                   .then(function (data) {
-                    return navigate("/posts");
+                    return navigate("/");
                   });
 
             }
