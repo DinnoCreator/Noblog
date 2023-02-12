@@ -59,7 +59,7 @@ export const LoginComponent = () => {
       })
       .then(function (data) {
         sessionStorage.setItem("token", "Bearer " + data.access_token);
-        return navigate("/posts");
+        return navigate("/");
       });
     } catch (error) {
       console.error(error);
