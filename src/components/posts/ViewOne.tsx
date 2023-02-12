@@ -163,7 +163,7 @@ export const ViewOne = () => {
                         headers: { "Authorization": `${sessionStorage.getItem("token")}` },
                         body: JSON.stringify({
                           title,
-                          post1,
+                          post: post1,
                         }),
                     })
                         .then((res) => {
