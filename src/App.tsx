@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { SignUp } from './pages/unauthenticated/Signup';
+import { Routes, Route } from 'react-router-dom';
+import ViewAllPosts from './pages/authenticated/ViewAllpost';
+import View from './pages/authenticated/View';
+import VistorViewPost from './pages/unauthenticated/VistorViewPost';
+import Login from './pages/unauthenticated/Login';
+import CreatePost from './pages/authenticated/CreatePost';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/signup' element={<SignUp />}/>
+       <Route path='/login' element={<Login />}/>
+      <Route path='/' element={<ViewAllPosts/>}/>
+      <Route path='/posts/view' element={<View/>}/>
+      <Route path='/posts/view/visitor' element={<VistorViewPost/>}/>
+      <Route path='/createpost' element={<CreatePost/>}/>
+    </Routes>
   );
 }
 
 export default App;
+
