@@ -141,11 +141,13 @@ export const ViewOne = () => {
           <Button variant="secondary" onClick={async () => {
                 try {
                     await fetch(`${api}/posts/${location.state.postId}`, {
-                        method: "Delete",
+                        method: "DELETE",
                         headers: { "Authorization": `${sessionStorage.getItem("token")}` }
                     })
                         .then((res) => {
-                                return navigate("/");
+                                return res.json()
+                        }).then((data) => {
+                          return navigate ("/");
                         })
             } catch (error) {
               console.log(error);
@@ -165,11 +167,9 @@ export const ViewOne = () => {
                         }),
                     })
                         .then((res) => {
-                            if (res.status !== 200) {
-                                return navigate("/posts/view");
-                            } else {
-                                return navigate ("/")
-                            }
+                                return res.json()
+                        }).then((data) => {
+                          return navigate ("/");
                         })
             } catch (error) {
               console.log(error);
