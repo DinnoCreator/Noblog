@@ -90,7 +90,7 @@ export const ViewOne = () => {
     </div>
 
     <Modal show={show} fullscreen={true} onHide={handleClose}>
-                <Modal.Header>
+                <Modal.Header closeButton>
                     <Modal.Title>Make changes to your post</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
