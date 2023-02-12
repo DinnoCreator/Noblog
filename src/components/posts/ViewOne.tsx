@@ -166,14 +166,11 @@ export const ViewOne = () => {
                     })
                         .then((res) => {
                             if (res.status !== 200) {
-                                return navigate("/login");
+                                return navigate("/posts/view");
                             } else {
-                                return res.json();
+                                return navigate ("/")
                             }
                         })
-                        .then(function (jsonData) {
-                            setPost(jsonData)
-                        });
             } catch (error) {
               console.log(error);
               
