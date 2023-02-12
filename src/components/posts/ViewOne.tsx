@@ -96,12 +96,12 @@ export const ViewOne = () => {
                 <Modal.Body>
                     <div>
                         <div className="mb-3">
-                            <h3>Post Title:</h3>
+                            <h3>Title:</h3>
                         </div>
                         <div>
                         <div className="mb-5">
                             <label htmlFor="exampleInputtitle1" className={`form-label h3 label`}>
-                                Your link
+                                Your new title
                             </label>
                             <input
                                 type="title"
@@ -116,12 +116,12 @@ export const ViewOne = () => {
                         </div>
                         </div>
                         <div className="mb-3">
-                            <h3>Post Title:</h3>
+                            <h3>Post:</h3>
                         </div>
                         <div>
                         <div className="mb-5">
                             <label htmlFor="exampleInputtitle1" className={`form-label h3 label`}>
-                                Your link
+                                Your new post
                             </label>
                             <input
                                 type="title"
