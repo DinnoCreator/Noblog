@@ -42,6 +42,10 @@ const CreatePost = () => {
                     style={{ display: "inline-block" }}
                     className="loaderBig mt-5"
                 ></div>
+                <div className="mt-4" style={{color: "white"}}>
+                  <p>If the loader persists longer than 10 secs which it might, please bear with us 
+        we're using a free server hosting so it sleeps and it might take some time to run. After it wakes up it would take 10 secs or less to load.</p>
+                 </div>
             </div>
         )
     } else {
